@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        background-image: url(clacbg4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:white;
+        margin:0px;
+    }
+    .main h2{
+        background-color: rgb(55, 55, 182);
+        border:1vw solid rgb(0, 195, 255);
+    }
+    .calc{
+        background-color: rgba(255, 255, 255, 0.938);
+        text-align: center;
+        display: grid;
+        height:62vh;
+        width:24vw;
+        margin-top:6vw;
+        margin-left:35vw;
+        padding:18px;
+        border-radius:10px;
+    }
+    input{
+        background-color: white;
+        border:1px solid rgb(44, 44, 44);
+        height:10vh;
+        color: black;
+        font-size: 3vh;
+        /* border-radius:10px; */
+    }
+    .op1{
+        color:black;
+        padding:2px;
+        /* border:2px solid blue; */
+    }
+    .op1 button{
+        background-color:rgb(201, 201, 201);
+        border-color:rgb(201, 201, 201);
+        border-width: 0px;
+        text-align: center;
+        /* padding:10px; */
+        margin:6px;
+        /* float:left; */
+    }
+    .op1 button:hover{
+        background-color: rgb(177, 255, 255);
+        color: black;
+    }
+    .op1 .num{
+        border-radius: 100px ;
+        padding:18px;
+        padding-top:6px;
+        padding-bottom:6px;
+        font-size: 20px;
+    }
+    .op1 .op{
+        padding:18px;
+        font-size: 20px;
+        border-radius: 100px;
+        padding-top:6px;
+        padding-bottom: 6px;
+        background-color: blue;
+        border-color: blue;
+    }
+@media(max-width:560px){
+    .calc{
+        padding-top:2vw;
+        width:70vw;
+        margin:9vw;
+    }
+    .op1{
+        padding:2px;
+    }
+    .op1 button{
+        margin:1vw;
+        /* font-size:15px; */
+    }
+    #block{
+        width:0px;
+        height:0px;
+        font-size: 0px;
+        border:0px;
+        padding:0px;
+        border-radius:0px;
+        margin:0px;
+    }
+}
+</style>
+<body>
+    <div class="main">
+        <h2>Calculator.org</h2>
+        <div class="calc">
+            <input type="text" name="screen" id="screen" >
+            <div class="op1">
+                <button class="op" style="background-color: aqua; border-color: aqua;">C</button>
+                <button class="op" style="background-color: aqua; border-color: aqua;">( )</button>
+                <button class="op" style="background-color: aqua; border-color: aqua;">%</button>
+                <button class="op">/</button>
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button class="op">x</button>
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="op">-</button>
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="op">+</button>
+                <button class="num" id="block">+-</button>
+                <button class="num">0</button>
+                <button class="num">.</button>
+                <button class="op">=</button>
+            </div>
+            </div><br><br><br></div>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+</html>
